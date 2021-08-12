@@ -1,0 +1,10 @@
+{
+    "/frontend/css/style.css": "/frontend/css/style.css",
+    "/frontend/css/tiny-slider.css": "/frontend/css/tiny-slider.css",
+    "/frontend/css/bootstrap.css": "/frontend/css/bootstrap.css",
+    "/backend/assets/css/app.css": "/backend/assets/css/app.css",
+    "/backend/assets/js/libs/libs.css": "/backend/assets/js/libs/libs.css",
+    "/backend/assets/js/app.js": "/backend/assets/js/app.js",
+    "/backend/assets/js/javascript.js": "/backend/assets/js/javascript.js",
+    "/backend/assets/js/quill.js": "/backend/assets/js/quill.js"
+}
