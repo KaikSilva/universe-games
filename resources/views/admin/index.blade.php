@@ -54,14 +54,14 @@
                                             <label class="font-weight-semibold" for="email">E-mail:</label>
                                             <div class="input-affix">
                                                 <i class="prefix-icon anticon anticon-mail"></i>
-                                                <input type="text" class="form-control" name="email" id="email" placeholder="email">
+                                                <input style="height: 38px!important;" type="text" class="form-control" name="email" id="email" placeholder="email">
                                             </div>  
                                         </div>
                                         <div class="form-group">
                                             <label class="font-weight-semibold" for="senha">Senha:</label>
                                             <div class="input-affix m-b-10">
                                                 <i class="prefix-icon anticon anticon-lock"></i>
-                                                <input type="password" name="senha" class="form-control" id="senha" placeholder="senha">
+                                                <input style="height: 38px!important;" type="password" name="senha" class="form-control" id="senha" placeholder="senha">
                                             </div>
                                         </div>
                                         <div class="form-group">

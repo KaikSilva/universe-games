@@ -18,7 +18,7 @@
                         <a class="nav-link" href="{{ route('web.blog') }}">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Contact</a>
+                        <a class="nav-link" href="">Contato</a>
                     </li>
                 </ul>
                 <div class="mb-4 mb-lg-0">
