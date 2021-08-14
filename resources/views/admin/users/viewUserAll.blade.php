@@ -19,9 +19,9 @@
                                 <tr>
                                     <td>
                                         <div class="avatar avatar-image  m-h-10 m-r-15">
-                                            <img src="{{ $user->cover }}" alt="">
+                                            <img src="{{ asset('backend/assets/images/avatars/'.$user->cover) }}" alt="">
                                         </div>    
-                                        <a href="{{ route('admin.view.user' , ['user' => $user->id]) }}" >{{ $user->name }}</a>
+                                        <a href="{{ route('admin.user.show' , ['user' => $user->id]) }}" >{{ $user->name }}</a>
 
                                     </td>
                                     <td>{{ $user->email }}</td>

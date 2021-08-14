@@ -18,7 +18,7 @@
                             <div class="d-md-flex m-b-15 align-items-center justify-content-between">
                                 <div class="media align-items-center m-b-15">
                                     <div class="avatar avatar-image rounded" style="height: 70px; width: 70px">
-                                        <img src="{{ $Author->cover }}" alt="">
+                                        <img src="{{ asset('backend/assets/images/avatars/'.$Author->cover) }}" alt="">
                                     </div>
                                     <div class="m-l-15">
                                         <h4 class="m-b-0">{{ $Author->name }}</h4>
@@ -26,7 +26,7 @@
                                     </div>
                                 </div>
                                 <div class="m-b-15">
-                                    <a style="color:#fff;" href="{{ route('admin.edit.user' , ['user' => $Author->id]) }}" class="btn btn-primary">
+                                    <a style="color:#fff;" href="{{ route('admin.user.edit' , ['user' => $Author->id]) }}" class="btn btn-primary">
                                         <i class="anticon anticon-edit"></i>
                                         <span>Editar</span>
                                     </a>

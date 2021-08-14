@@ -47,10 +47,15 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'as' => 'admin.'], fu
         Route::get('/home' , 'AuthController@showHome')->name('home');
 
         /** COLABORADORES */
-        Route::get('/colaboradores/{user}', 'UserController@viewUser')->name('view.user');
-        Route::get('/colaboradores', 'UserController@viewUserAll')->name('view.user.all');
-        Route::get('/colaboradores/{user}/editar', 'UserController@EditUser')->name('edit.user');
+        Route::resource('user', 'UserController');
+
+        /** ACL - ROLES */
+        Route::get('role/{role}/permissions' , 'roleController@permissions')->name('role.permissions');
+        Route::post('role/{role}/permissions/sync' , 'roleController@permissionsSync')->name('role.permissionSync');
+        Route::resource('role', 'roleController');
+
+        /** ACL - PERMISSIONS */
+        Route::resource('permission', 'PermissionController');
 
     });
-
 });

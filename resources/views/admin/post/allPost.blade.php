@@ -22,7 +22,7 @@
                                     <td><a href="{{ route('admin.edit.post' , ['post' => $post->id]) }}" >{{ $post->title }}</a></td>
                                     <td>{{ $post->subtitle }}</td>
                                     <td>{{ $post->uri }}</td>
-                                    <td><a href="{{ route('admin.view.user' , ['user' => $post->Author->id]) }}" >{{ $post->Author->name }}</a></td>
+                                    <td><a href="{{ route('admin.user.show' , ['user' => $post->Author->id]) }}" >{{ $post->Author->name }}</a></td>
                                     <td>{{ date('d/m/Y H:i:s' , strtotime($post->created_at)) }}</td>
                                 </tr>
                                 @endforeach

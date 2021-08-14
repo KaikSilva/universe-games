@@ -8,6 +8,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use App\Support\Message;
 use App\Support\AddLog;
+use App\Support\SaveImage;
 
 class Controller extends BaseController
 {
@@ -19,6 +20,7 @@ class Controller extends BaseController
     {
         $this->message = new Message();
         $this->AddLog = new AddLog();
+        $this->SaveImage = new SaveImage();
     }
 }
 

@@ -84,11 +84,9 @@
             </div>
         </div>
     </div>
-
     
     <script src="backend/assets/js/libs/libs.css"></script>
     <script src="backend/assets/js/javascript.js"></script>
 
 </body>
-
 </html>

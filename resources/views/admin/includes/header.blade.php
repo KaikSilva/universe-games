@@ -100,14 +100,14 @@
                         <li class="dropdown dropdown-animated scale-left">
                             <div class="pointer" data-toggle="dropdown">
                                 <div class="avatar avatar-image  m-h-10 m-r-15">
-                                    <img src="{{ $user->cover }}"  alt="">
+                                    <img src="{{ asset('backend/assets/images/avatars/'.$user->cover) }}"  alt="">
                                 </div>
                             </div>
                             <div class="p-b-15 p-t-20 dropdown-menu pop-profile">
                                 <div class="p-h-20 p-b-15 m-b-10 border-bottom">
                                     <div class="d-flex m-r-50">
                                         <div class="avatar avatar-lg avatar-image">
-                                            <img src="{{ $user->cover }}" alt="">
+                                            <img src="{{ asset('backend/assets/images/avatars/'.$user->cover) }}" alt="">
                                         </div>
                                         <div class="m-l-10">
                                             <p class="m-b-0 text-dark font-weight-semibold">{{ $user->name }}</p>
@@ -124,20 +124,20 @@
                                         <i class="anticon font-size-10 anticon-right"></i>
                                     </div>
                                 </a>
-                                <a href="javascript:void(0);" class="dropdown-item d-block p-h-15 p-v-10">
+                                <a href="{{ route('admin.role.index') }}" class="dropdown-item d-block p-h-15 p-v-10">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div>
                                             <i class="anticon opacity-04 font-size-16 anticon-lock"></i>
-                                            <span class="m-l-10">Account Setting</span>
+                                            <span class="m-l-10">Gestão de Perfis</span>
                                         </div>
                                         <i class="anticon font-size-10 anticon-right"></i>
                                     </div>
                                 </a>
-                                <a href="javascript:void(0);" class="dropdown-item d-block p-h-15 p-v-10">
+                                <a href="{{ route('admin.permission.index') }}" class="dropdown-item d-block p-h-15 p-v-10">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div>
                                             <i class="anticon opacity-04 font-size-16 anticon-project"></i>
-                                            <span class="m-l-10">Projects</span>
+                                            <span class="m-l-10">Gestão de Permissões</span>
                                         </div>
                                         <i class="anticon font-size-10 anticon-right"></i>
                                     </div>
@@ -220,10 +220,10 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="">
-                                    <a href="{{ route('admin.view.user.all') }}">Todos os colaboradores</a>
+                                    <a href="{{ route('admin.user.index') }}">Todos os colaboradores</a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('admin.add.post') }}">Adicionar novo</a>
+                                    <a href="{{ route('admin.user.create') }}">Adicionar novo</a>
                                 </li>
                             </ul>
                         </li>
